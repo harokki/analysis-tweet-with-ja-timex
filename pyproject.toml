@@ -8,6 +8,9 @@ authors = ["Your Name <you@example.com>"]
 python = "^3.9"
 ja-timex = "^0.1.6"
 twint = {git = "https://github.com/twintproject/twint.git", rev = "master"}
+fastapi = "^0.68.1"
+uvicorn = "^0.15.0"
+taskipy = "^1.8.1"
 
 [tool.poetry.dev-dependencies]
 isort = "^5.9.3"
@@ -19,3 +22,11 @@ pytest = "^6.2.4"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+fmt = { cmd = "black analysis-tweet", help = "format code" }
+lint = { cmd = "task lint_black && task lint_flake8 && task lint_mypy", help = "exec lint" }
+lint_flake8 = "flake8 --max-line-length=119 analysis-tweet"
+lint_mypy = "mypy analysis-tweet"
+lint_black = "black --check analysis-tweet"
+start = { cmd = "uvicorn analysis-tweet.main:app --reload", help = "launch api server" }
