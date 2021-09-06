@@ -9,6 +9,7 @@
     88,
     119
   ],
+  "editor.tabSize": 4,
   "pylance.insidersChannel": "daily",
   "python.analysis.completeFunctionParens": true,
   "python.analysis.logLevel": "Warning",
