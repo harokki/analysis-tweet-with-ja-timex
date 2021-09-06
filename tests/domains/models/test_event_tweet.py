@@ -1,6 +1,6 @@
 import pytest
 
-from analysis_tweet.domain.event_tweet import EventTweet
+from analysis_tweet.domains.models.event_tweet import EventTweet
 
 
 def test_initialize_event_tweet():
