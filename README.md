@@ -1,2 +1,3 @@
 # analysis-tweet-with-ja-timex
-ja-timexの検証
+
+ja-timex の検証
