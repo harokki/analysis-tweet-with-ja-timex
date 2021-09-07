@@ -11,6 +11,7 @@ twint = {git = "https://github.com/twintproject/twint.git", rev = "master"}
 fastapi = "^0.68.1"
 uvicorn = "^0.15.0"
 taskipy = "^1.8.1"
+dependency-injector = "^4.36.0"
 
 [tool.poetry.dev-dependencies]
 isort = "^5.9.3"
@@ -29,4 +30,4 @@ lint = { cmd = "task lint_black && task lint_flake8 && task lint_mypy", help = "
 lint_flake8 = "flake8 --max-line-length=119 analysis_tweet"
 lint_mypy = "mypy analysis_tweet"
 lint_black = "black --check analysis_tweet"
-start = { cmd = "uvicorn analysis_tweet.main:app --reload", help = "launch api server" }
+start = { cmd = "uvicorn analysis_tweet.application:app --reload", help = "launch api server" }
