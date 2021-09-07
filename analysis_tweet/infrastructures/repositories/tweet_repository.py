@@ -5,5 +5,5 @@ from analysis_tweet.domains.models.event_tweet import EventTweet
 
 
 class TweetRepositoryWithTwint(TweetRepository):
-    def find_by_user_id(self, user_name: str) -> List[EventTweet]:
+    def find_by_user_id(self, user_id: str) -> List[EventTweet]:
         return [EventTweet("aaaa")]
