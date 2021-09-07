@@ -1,8 +1,8 @@
 from typing import List
 import twint
 
-from analysis_tweet.domains.repositories.tweet_repository import TweetRepository
-from analysis_tweet.domains.models.tweet import EventTweet, Tweet, TwintBase
+from kokutwi.domains.repositories.tweet_repository import TweetRepository
+from kokutwi.domains.models.tweet import EventTweet, Tweet, TwintBase
 
 
 def convert_tweet(x):

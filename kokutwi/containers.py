@@ -1,9 +1,9 @@
 from dependency_injector import containers, providers
 
-from analysis_tweet.infrastructures.repositories.tweet_repository import (
+from kokutwi.infrastructures.repositories.tweet_repository import (
     TweetRepositoryWithTwint,
 )
-from analysis_tweet.services.tweet_service import TweetService
+from kokutwi.services.tweet_service import TweetService
 
 
 class Container(containers.DeclarativeContainer):

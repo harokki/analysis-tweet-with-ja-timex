@@ -3,11 +3,11 @@ from unittest import mock
 import pytest
 from fastapi.testclient import TestClient
 
-from analysis_tweet.infrastructures.repositories.tweet_repository import (
+from kokutwi.infrastructures.repositories.tweet_repository import (
     TweetRepositoryWithTwint,
 )
-from analysis_tweet.domains.models.tweet import Tweet
-from analysis_tweet.application import app
+from kokutwi.domains.models.tweet import Tweet
+from kokutwi.application import app
 
 
 @pytest.fixture

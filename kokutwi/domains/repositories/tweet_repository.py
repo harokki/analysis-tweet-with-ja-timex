@@ -1,7 +1,7 @@
 from abc import ABCMeta, abstractmethod
 from typing import List
 
-from analysis_tweet.domains.models.tweet import Tweet
+from kokutwi.domains.models.tweet import Tweet
 
 
 class TweetRepository(metaclass=ABCMeta):

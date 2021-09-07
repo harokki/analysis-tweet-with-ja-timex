@@ -1,6 +1,6 @@
 import pytest
 
-from analysis_tweet.infrastructures.repositories.tweet_repository import (
+from kokutwi.infrastructures.repositories.tweet_repository import (
     TweetRepositoryWithTwint,
 )
 
