@@ -1,8 +1,8 @@
 from typing import List
-from ja_timex import TimexParser
 
-from kokutwi.domains.repositories.tweet_repository import TweetRepository
+from ja_timex import TimexParser
 from kokutwi.domains.models.tweet import Tweet
+from kokutwi.domains.repositories.tweet_repository import TweetRepository
 
 
 class TweetService:

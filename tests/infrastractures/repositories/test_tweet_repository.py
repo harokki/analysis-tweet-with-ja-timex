@@ -1,5 +1,4 @@
 import pytest
-
 from kokutwi.infrastructures.repositories.tweet_repository import (
     TweetRepositoryWithTwint,
 )

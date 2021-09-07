@@ -1,12 +1,12 @@
 from typing import List
 
+from dependency_injector.wiring import Provide, inject
 from fastapi import APIRouter, Depends, Response, status
-from dependency_injector.wiring import inject, Provide
 from pydantic import BaseModel
 
 from kokutwi.containers import Container
-from kokutwi.services.tweet_service import TweetService
 from kokutwi.domains.models.tweet import Tweet
+from kokutwi.services.tweet_service import TweetService
 
 router = APIRouter()
 

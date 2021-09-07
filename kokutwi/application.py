@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from .containers import Container
 from . import endpoints
+from .containers import Container
 
 
 def create_app() -> FastAPI:

@@ -1,5 +1,4 @@
 import pytest
-
 from kokutwi.domains.models.tweet import EventTweet, Tweet
 
 
