@@ -19,10 +19,5 @@
   "python.pythonPath": "~/work/kokutwi-backend/.venv/bin/python3.9",
   "python.autoComplete.extraPaths": [
     "~/work/analysis-tweet-with-ja-timex/.venv/lib/python3.9/site-packages"
-  ],
-  "[python]":{
-    "editor.codeActionsOnSave":{
-       "source.organizeImports":true
-    }
-  }
+  ]
 }
