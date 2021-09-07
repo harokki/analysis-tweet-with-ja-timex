@@ -1,7 +1,7 @@
 from typing import List
 
 from analysis_tweet.domains.repositories.tweet_repository import TweetRepository
-from analysis_tweet.domains.models.event_tweet import EventTweet
+from analysis_tweet.domains.models.tweet import EventTweet
 
 
 class TweetService:

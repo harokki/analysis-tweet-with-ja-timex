@@ -6,3 +6,11 @@ import os
 @dataclass
 class EventTweet:
     tweet: str
+
+
+@dataclass
+class Tweet:
+    id: int
+    link: str
+    tweet: str
+    user_id: str
