@@ -1,16 +1,27 @@
+from typing import List
+
 from fastapi import APIRouter, Depends, Response, status
 from dependency_injector.wiring import inject, Provide
+from pydantic import BaseModel
 
 from analysis_tweet.containers import Container
 from analysis_tweet.services.tweet_service import TweetService
+from analysis_tweet.domains.models.tweet import Tweet
 
 router = APIRouter()
 
 
-@router.get("/tweets/{user_id}")
+class EventTweetResponse(BaseModel):
+    user_id: str
+    tweets: List[Tweet]
+
+
+@router.get("/tweets/{user_id}", response_model=EventTweetResponse)
 @inject
-def get_by_id(
+def get_event_tweets_by_id(
     user_id: str,
     tweet_service: TweetService = Depends(Provide[Container.tweet_service]),
 ):
-    return tweet_service.get_event_tweets_by_user_id(user_id)
+    event_tweets = tweet_service.get_event_tweets_by_user_id(user_id)
+
+    return {"user_id": user_id, "tweets": event_tweets}
