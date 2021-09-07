@@ -9,4 +9,4 @@ class TweetService:
         self._repository = tweet_repository
 
     def get_tweet_by_user_id(self, user_id: str) -> List[EventTweet]:
-        return self._repository.find_by_user_name(user_id)
+        return self._repository.find_by_user_id(user_id)

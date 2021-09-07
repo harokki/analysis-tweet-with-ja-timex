@@ -6,5 +6,5 @@ from analysis_tweet.domains.models.event_tweet import EventTweet
 
 class TweetRepository(metaclass=ABCMeta):
     @abstractmethod
-    def find_by_user_name(self, user_name: str) -> List[EventTweet]:
+    def find_by_user_id(self, user_name: str) -> List[EventTweet]:
         raise NotImplementedError
