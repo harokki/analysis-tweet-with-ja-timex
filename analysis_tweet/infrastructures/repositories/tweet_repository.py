@@ -15,6 +15,9 @@ class TweetRepositoryWithTwint(TweetRepository):
         c = twint_base.config
         c.Username = user_id
 
+        # これをしないと前回の結果が残ってしまうことがある
+        twint.output.clean_lists()
+
         twint.run.Search(c)
         tweets = twint.output.tweets_list
         tweets_map = list(map(convert_tweet, tweets))

@@ -13,4 +13,4 @@ def get_by_id(
     user_id: str,
     tweet_service: TweetService = Depends(Provide[Container.tweet_service]),
 ):
-    return tweet_service.get_tweet_by_user_id(user_id)
+    return tweet_service.get_event_tweets_by_user_id(user_id)
