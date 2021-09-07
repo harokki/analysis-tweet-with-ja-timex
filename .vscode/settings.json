@@ -16,8 +16,8 @@
   "python.linting.banditEnabled": true,
   "python.terminal.activateEnvInCurrentTerminal": true,
   "python.testing.pytestEnabled": true,
-  "python.pythonPath": "/Users/iizukahiroki/work/analysis-tweet-with-ja-timex/.venv/bin/python3.9",
+  "python.pythonPath": "~/work/kokutwi-backend/.venv/bin/python3.9",
   "python.autoComplete.extraPaths": [
-    "/Users/iizukahiroki/work/analysis-tweet-with-ja-timex/.venv/lib/python3.9/site-packages"
+    "~/work/analysis-tweet-with-ja-timex/.venv/lib/python3.9/site-packages"
   ]
 }
