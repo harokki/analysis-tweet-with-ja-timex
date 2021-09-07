@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from datetime import datetime
+from twint import Config
 import os
 
 
@@ -14,3 +15,8 @@ class Tweet:
     link: str
     tweet: str
     user_id: str
+
+
+@dataclass
+class TwintBase:
+    config = Config(Store_object=True, Hide_output=True)
