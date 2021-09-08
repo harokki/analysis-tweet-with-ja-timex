@@ -33,7 +33,7 @@ def test_get_event_tweets_by_id(client):
         "user_id": "user",
         "tweets": [
             {
-                "id": 1236,
+                "tweet_id": 1236,
                 "link": "https://1236",
                 "tweet": "これは9月2日 16:00のツイート",
                 "user_id": "user",

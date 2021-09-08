@@ -7,7 +7,7 @@ from kokutwi.domains.repositories.tweet_repository import TweetRepository
 
 
 def convert_tweet(x):
-    return Tweet(id=x.id, link=x.link, tweet=x.tweet, user_id=x.username)
+    return Tweet(tweet_id=x.id, link=x.link, tweet=x.tweet, user_id=x.username)
 
 
 class TweetRepositoryWithTwint(TweetRepository):
