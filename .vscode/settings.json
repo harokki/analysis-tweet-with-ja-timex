@@ -1,14 +1,10 @@
 {
   "python.formatting.provider": "black",
-  "python.linting.flake8Args": [
-    "--max-line-length 119"
-  ],
+  "python.linting.enabled": true,
+  "python.linting.flake8Args": ["--max-line-length 119"],
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
-  "editor.rulers": [
-    88,
-    119
-  ],
+  "editor.rulers": [88, 119],
   "editor.tabSize": 4,
   "python.analysis.logLevel": "Warning",
   "python.analysis.memory.keepLibraryAst": true,
@@ -19,5 +15,9 @@
   "python.pythonPath": "~/work/kokutwi-backend/.venv/bin/python3.9",
   "python.autoComplete.extraPaths": [
     "~/work/analysis-tweet-with-ja-timex/.venv/lib/python3.9/site-packages"
-  ]
+  ],
+  "python.analysis.extraPaths": [
+    "~/work/analysis-tweet-with-ja-timex/.venv/lib/python3.9/site-packages"
+  ],
+  "python.analysis.completeFunctionParens": true
 }

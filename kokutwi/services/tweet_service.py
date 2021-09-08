@@ -1,6 +1,7 @@
 from typing import List
 
 from ja_timex import TimexParser
+
 from kokutwi.domains.models.tweet import Tweet
 from kokutwi.domains.repositories.tweet_repository import TweetRepository
 
@@ -15,9 +16,8 @@ class TweetService:
         for tweet in tweets:
             timexes = TimexParser().parse(tweet.tweet)
             if timexes:
-                for timex in timexes:
-                    if timex.type == "DATE":
-                        event_tweets.append(tweet)
-                        break
+                timexes_type_time = [timex for timex in timexes if timex.type == "TIME"]
+                if timexes_type_time:
+                    event_tweets.append(tweet)
 
         return event_tweets
